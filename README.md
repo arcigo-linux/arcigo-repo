@@ -13,7 +13,7 @@ Add the following lines to the end of /etc/pacman.conf :
 
 ```bash
 sudo touch /etc/pacman.d/arcigo-mirrorlist
-echo "Server = https://arcigo-linux.gitlab.io/arcigo-repo/$arch" | sudo tee /etc/pacman.d/arcigo-mirrorlist
+echo "Server = https://arcigo-linux.github.io/$repo/$arch" | sudo tee /etc/pacman.d/arcigo-mirrorlist
 ```
 
 - Add the following lines to /etc/pacman.conf
@@ -31,7 +31,7 @@ Include = /etc/pacman.d/arcigo-mirrorlist
 ```bash
 [arcigo-repo]
 SigLevel = Required DatabaseOptional
-Server = https://arcigo-linux.gitlab.io/arcigo-repo/$arch
+Server = https://arcigo-linux.github.io/$repo/$arch
 ```
 
 #### Update your system
